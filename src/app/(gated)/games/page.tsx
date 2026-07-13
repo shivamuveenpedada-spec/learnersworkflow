@@ -40,7 +40,7 @@ const games = [
     label: "Sudoku",
     description: "Fill in the numbers",
     colorVar: "--color-math",
-    available: false,
+    available: true,
   },
   {
     href: "/games/chess",
