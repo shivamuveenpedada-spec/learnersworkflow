@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Ebook } from "@/content";
 import { Button } from "@/components/ui/Button";
 import { useProgress } from "@/lib/useProgress";
+import { withBasePath } from "@/lib/basePath";
 
 export function EbookReader({ book }: { book: Ebook }) {
   const [pageIndex, setPageIndex] = useState(0);
@@ -98,7 +99,7 @@ export function EbookReader({ book }: { book: Ebook }) {
             onClick={() => audioRef.current?.play().catch(() => {})}
             className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md active:scale-90"
           >
-            <audio ref={audioRef} src={page.audio.src} preload="none" />
+            <audio ref={audioRef} src={withBasePath(page.audio.src)} preload="none" />
             <span aria-hidden className="text-2xl">
               🔊
             </span>

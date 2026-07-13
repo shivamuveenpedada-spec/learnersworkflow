@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import type { AudioAsset } from "@/content";
 import { cn } from "@/lib/cn";
+import { withBasePath } from "@/lib/basePath";
 
 export function AudioPlayButton({
   audio,
@@ -27,7 +28,7 @@ export function AudioPlayButton({
         className
       )}
     >
-      <audio ref={ref} src={audio.src} preload="none" />
+      <audio ref={ref} src={withBasePath(audio.src)} preload="none" />
       <span aria-hidden className="text-2xl">
         🔊
       </span>
