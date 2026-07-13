@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #f4faff;
+  --color-ink: #2b2140;
+  --color-ink-soft: #6b6280;
+  --color-card: #ffffff;
+
+  --color-english: #ff5d73;
+  --color-math: #2f9bff;
+  --color-writing: #a259ff;
+  --color-phonics: #00c2ff;
+  --color-alphabet: #ffc93c;
+  --color-games: #00d9a3;
+  --color-science: #1abc9c;
+  --color-sky: #6ec9ff;
+  --color-grass: #58cc02;
+  --color-grass-dark: #4aa802;
+
+  --radius-card: 1.5rem;
+  --radius-pill: 999px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: var(--color-bg);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-card: var(--color-card);
+  --color-english: var(--color-english);
+  --color-math: var(--color-math);
+  --color-writing: var(--color-writing);
+  --color-phonics: var(--color-phonics);
+  --color-alphabet: var(--color-alphabet);
+  --color-games: var(--color-games);
+  --color-science: var(--color-science);
+  --color-sky: var(--color-sky);
+  --color-grass: var(--color-grass);
+  --color-grass-dark: var(--color-grass-dark);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-sky) 35%, white) 0%, var(--color-bg) 420px);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
 }
