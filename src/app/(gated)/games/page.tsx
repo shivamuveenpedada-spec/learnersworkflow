@@ -48,7 +48,7 @@ const games = [
     label: "Chess",
     description: "Outsmart the computer",
     colorVar: "--color-science",
-    available: false,
+    available: true,
   },
 ];
 
