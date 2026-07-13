@@ -1,6 +1,7 @@
 import { SubjectTile } from "@/components/ui/SubjectTile";
 import { ContinueStrip } from "@/components/ui/ContinueStrip";
 import { FeaturedCard } from "@/components/ui/FeaturedCard";
+import { AuthNav } from "@/components/auth/AuthNav";
 import { ebooks, mathActivitySets, scienceTopics } from "@/content";
 
 const tiles = [
@@ -66,6 +67,9 @@ export default function Home() {
   return (
     <>
       <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col items-center gap-10 px-6 pt-16 pb-24">
+        <div className="flex w-full justify-end">
+          <AuthNav />
+        </div>
         <div className="flex flex-col items-center gap-4 text-center">
           <span
             aria-hidden
