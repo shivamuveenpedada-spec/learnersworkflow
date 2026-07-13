@@ -16,7 +16,7 @@ const games = [
     label: "Coloring Book",
     description: "Pick a color, fill it in",
     colorVar: "--color-writing",
-    available: false,
+    available: true,
   },
   {
     href: "/games/color-flip",
@@ -24,7 +24,7 @@ const games = [
     label: "Color Flip",
     description: "Flip the board your way",
     colorVar: "--color-ink",
-    available: false,
+    available: true,
   },
   {
     href: "/games/dressing",
@@ -32,7 +32,7 @@ const games = [
     label: "Dress Up",
     description: "Get ready for the day",
     colorVar: "--color-alphabet",
-    available: false,
+    available: true,
   },
   {
     href: "/games/sudoku",
