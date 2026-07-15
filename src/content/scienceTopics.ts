@@ -6,9 +6,9 @@ export const scienceTopics: ScienceTopic[] = [
   {
     id: "animals",
     title: "Amazing Animals",
-    heroImage: { src: "/images/placeholder/science-animals.svg", alt: "Amazing animals" },
+    heroImage: { src: "/images/generated/science-animals.png", alt: "Amazing animals" },
     previewImages: [
-      { src: "/images/placeholder/animal-cat.svg", alt: "Cat" },
+      { src: "/images/generated/animal-cat.png", alt: "Cat" },
       { src: "/images/placeholder/animal-dog.svg", alt: "Dog" },
       { src: "/images/placeholder/animal-fish.svg", alt: "Fish" },
     ],
@@ -17,7 +17,7 @@ export const scienceTopics: ScienceTopic[] = [
     facts: [
       {
         text: "Cats sleep for about 13-16 hours a day!",
-        image: { src: "/images/placeholder/animal-cat.svg", alt: "A sleepy cat" },
+        image: { src: "/images/generated/animal-cat.png", alt: "A sleepy cat" },
         audio: silence,
       },
       {

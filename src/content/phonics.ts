@@ -7,8 +7,7 @@ export const phonicsLetters: PhonicsLetter[] = [
     letter: "A",
     sound: silence,
     exampleWords: [
-      { word: "Apple", image: { src: "/images/placeholder/fruit-apple.svg", alt: "Apple" }, audio: silence },
-      { word: "Ant", image: { src: "/images/placeholder/animal-cat.svg", alt: "Ant" }, audio: silence },
+      { word: "Apple", image: { src: "/images/generated/fruit-apple.png", alt: "Apple" }, audio: silence },
     ],
     tiers: ["preschool", "earlyElementary"],
     free: true,
@@ -26,7 +25,7 @@ export const phonicsLetters: PhonicsLetter[] = [
     letter: "C",
     sound: silence,
     exampleWords: [
-      { word: "Cat", image: { src: "/images/placeholder/animal-cat.svg", alt: "Cat" }, audio: silence },
+      { word: "Cat", image: { src: "/images/generated/animal-cat.png", alt: "Cat" }, audio: silence },
     ],
     tiers: ["preschool", "earlyElementary"],
   },

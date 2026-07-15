@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SubjectTile } from "@/components/ui/SubjectTile";
 import { ContinueStrip } from "@/components/ui/ContinueStrip";
 import { FeaturedCard } from "@/components/ui/FeaturedCard";
@@ -55,7 +56,7 @@ const featured = [
   },
   {
     href: "/alphabet/A",
-    imageSrc: "/images/placeholder/fruit-apple.svg",
+    imageSrc: "/images/generated/fruit-apple.png",
     imageAlt: "Letter A",
     title: "Letter A: Apple",
     badge: "Alphabet",
@@ -73,10 +74,16 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 text-center">
           <span
             aria-hidden
-            className="flex h-24 w-24 items-center justify-center rounded-full text-6xl shadow-[0_6px_0_0_rgba(0,0,0,0.15)]"
+            className="relative flex h-24 w-24 items-center justify-center overflow-hidden rounded-full shadow-[0_6px_0_0_rgba(0,0,0,0.15)]"
             style={{ backgroundColor: "var(--color-alphabet)" }}
           >
-            🦊
+            <Image
+              src="/images/generated/mascot-fox.png"
+              alt=""
+              fill
+              priority
+              className="object-cover"
+            />
           </span>
           <h1 className="font-display text-4xl font-extrabold text-[var(--color-ink)] sm:text-5xl">
             LearnersWorkflow
